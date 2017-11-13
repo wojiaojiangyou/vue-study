@@ -3,7 +3,7 @@
 		<div class="detail_left">
 			<img :src="imgsource" alt="">
 			<ul>
-				<router-link :to="{path:item.href}" tag="li" v-for="item in detailList" active-class="active">{{item.title}}</router-link>
+				<router-link :to="{path:item.href}" tag="li" v-for="item in detailList" active-class="active" key="item">{{item.title}}</router-link>
 			</ul>
 		</div>
 		<div class="detail_right">
@@ -22,22 +22,22 @@ export default {
 			detailList:[
 				{	
 					title:'开放产品',
-					href:'/detail/earth'
+					href:'earth'
 					
 				},
 				{
 					title:'品牌营销',
-					href:'/detail/loud'
+					href:'loud'
 					
 				},
 				{
 					title:'使命必达',
-					href:'/detail/car'
+					href:'car'
 					
 				},
 				{
 					title:'永攀高峰',
-					href:'/detail/mounton'	
+					href:'mounton'	
 					
 				}
 			],

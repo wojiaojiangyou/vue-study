@@ -134,22 +134,22 @@ export default{
 				{
 					src:require('../assets/slideShow/pic1.jpg'),
 					title:'ReactJs 入门与实战',
-					href:'http://www.baidu.com'
+					href:'detail/earth'
 				},
 				{
 					src:require('../assets/slideShow/pic2.jpg'),
 					title:'Android开发工程师',
-					href:'http://www.baidu.com'
+					href:'detail/loud'
 				},
 				{
 					src:require('../assets/slideShow/pic3.jpg'),
 					title:'玩转算法面试',
-					href:'http://www.baidu.com'
+					href:'detail/car'
 				},
 				{
 					src:require('../assets/slideShow/pic4.jpg'),
 					title:'ReactNative开发跨平台github App',
-					href:'http://www.baidu.com'
+					href:'detail/mounton'
 				}
 			]
 		}

@@ -1,14 +1,14 @@
 <template>
 	<div class="slider_wrap">
 		<div class="list_wrap">
-			<a :href="sliders[nowIndex].href" @mouseover="stopRun" @mouseout="autoRun">
+			<router-link :to="{path:sliders[nowIndex].href}" @mouseover="stopRun" @mouseout="autoRun">
 				<transition name="slider-show" mode="out-in">
 					<img v-if="iShow" :src="sliders[nowIndex].src" :alt="sliders[nowIndex].title">				
 				</transition>
 				<transition name="slider-show-old"  mode="out-in">
 					<img v-if="!iShow" :src="sliders[nowIndex].src" :alt="sliders[nowIndex].title">				
 				</transition>
-			</a>
+			</router-link>
 			<div class="list_bottom">
 				<p>{{sliders[nowIndex].title}}</p>
 				<ul>
