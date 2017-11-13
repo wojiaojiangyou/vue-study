@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
-import App from './components/layout'
+import App from './pages/layout'
 import router from './router/index'
 
 Vue.prototype.$axios=axios;

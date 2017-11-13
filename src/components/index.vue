@@ -30,7 +30,7 @@
 				<div class="prowrap" :class="['prowrap_bg_'+item.id]" v-for="(item,index) in buyList">
 					<h2>{{item.title}}</h2>
 					<p>{{item.description}}</p>
-					<button>立即购买</button>
+					<router-link :to="{path:item.path}" tag="button">立即购买</router-link>
 				</div>
 			</div>
 		</div>
@@ -105,25 +105,29 @@ export default{
 					id:'earth',
 					title:'开放产品',
 					description:'开放产品是一种开放产品',
-					href:'http://www.baidu.com'
+					href:'http://www.baidu.com',
+					path:'detail/earth'
 				},
 				{
 					id:'loud',
 					title:'品牌营销',
 					description:'品牌营销是一种品牌营销',
-					href:'http://www.baidu.com'
+					href:'http://www.baidu.com',
+					path:'detail/loud'
 				},
 				{
 					id:'car',
 					title:'使命必达',
 					description:'使命必达是一种使命必达',
-					href:'http://www.baidu.com'
+					href:'http://www.baidu.com',
+					path:'detail/car'
 				},
 				{
 					id:'mounton',
 					title:'永攀高峰',
 					description:'永攀高峰是一种永攀高峰',
 					href:'http://www.baidu.com',
+					path:'detail/mounton'
 				}
 			],
 			sliderList:[

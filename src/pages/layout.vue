@@ -1,7 +1,7 @@
 <template>
 	<div class="index_wrap">
 		<div class="app-header">
-			<div class="logo">
+			<div class="logo" @click="backToHome">
 				<img src="../assets/logo.png" alt="">
 			</div>
 			<div class="tipinfo">
@@ -72,6 +72,9 @@ export default {
 		},
 		loginOut(){
 			this.username='';
+		},
+		backToHome(){
+			this.$router.push({path:'/'});
 		}
 	}
 }
@@ -133,6 +136,7 @@ table {
 		.logo{
 			width:50px;
 			height:50px;
+			cursor: pointer;
 			img{
 				width:100%;
 				height:100%;
