@@ -124,6 +124,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+input{
+	margin: 0;
+    padding: 0;
+    border: none;
+}
 
 .index_wrap{
 	.app-header{

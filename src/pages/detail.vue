@@ -62,7 +62,7 @@ export default {
 	display: flex;
 	.detail_left{
 		width:200px;
-		height:auto;
+		height:280px;
 		background:#fff;
 		overflow:hidden;
 		margin-right:20px;
@@ -84,6 +84,28 @@ export default {
 			&:hover,&.active{
 				background:#62c596;
 				color:#fff;
+			}
+		}
+	}
+	.detail_right{
+		width:100%;
+		height:auto;
+		.detail_right_top,.detail_right_bottom{
+			background:#fff;
+			border:1px solid #eee;
+			padding:15px;
+		}
+		.detail_right_top{
+			margin-bottom:15px;
+		}
+		.detail_right_bottom{
+			h4{
+				font-size: 14px;
+				margin-bottom:20px;
+			}
+			p{
+				font-size:12px;
+				color:#999;
 			}
 		}
 	}
