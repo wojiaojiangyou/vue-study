@@ -2,7 +2,7 @@
 	<div class="counter_wrap">
 		<div class="counter_sub" @click="sub">-</div>
 		<div class="counter_input">
-			<input type="text" v-model="counter">
+			<input type="text" v-model.number="counter">
 		</div>
 		<div class="counter_add" @click="add">+</div>
 	</div>
